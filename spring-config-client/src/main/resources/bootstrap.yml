@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: client
+  cloud:
+    config:
+      label: 1.0
+
+management.endpoints.web.exposure.include: '*'

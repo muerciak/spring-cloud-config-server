@@ -1,0 +1,20 @@
+GET http://localhost:8888/client/dev/1.0
+
+###
+
+GET http://localhost:9999/test/confProps
+
+###
+
+GET http://localhost:9999/test/value
+
+###
+
+
+GET http://localhost:9999/test2/value
+
+###
+
+POST http://localhost:9999/actuator/refresh
+
+###
