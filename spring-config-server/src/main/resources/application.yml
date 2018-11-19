@@ -1,14 +1,11 @@
 spring:
-  application:
-    name: config-server
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        default-profile: production
-        default-label: latest
-        native:
-          search-locations: file:///${user.home}/dev/config-repo/{application}/{profile}/{label}
+        git:
+          #uri: https://github.com/muerciak/config-repo
+          uri: file://${user.home}/dev/config-repo/ #/{application}/{profile}/{label}
+          searchPaths: '{application}/{profile}/{label}/'
+
 server:
   port: 8888

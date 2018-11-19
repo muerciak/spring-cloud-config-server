@@ -18,3 +18,7 @@ GET http://localhost:9999/test2/value
 POST http://localhost:9999/actuator/refresh
 
 ###
+
+GET http://localhost:8888/application/default
+
+###
